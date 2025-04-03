@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>IdealCode</title>
+
+	<link rel="stylesheet" href="./styles.css" type="text/css">
+	<script src="./main.js" type="module" defer></script>
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<div class="idealcode">
+		<header>
+			<nav class="navbar">
+				<a class="navbar_logo" href="./index.html"></a>
+			</nav>
+		</header>
+		<div class="content">
+
+			<div class="side">
+				<span class="side_header">Usuários Conectados</span>
+				<ul class="userlist"></ul>
+			</div>
+
+			<div class="main">
+
+				<div class="main_left">
+					<div class="chat_wrapper">
+						<div class="chat"></div>
+					</div>
+
+					<div class="forms">
+						<form class="name_form" style="display: flex;">
+							<input class="name_input" type="text" name="name"
+							placeholder="Digite seu nickname" autocomplete="off" required>
+							<input class="name_send" type="submit" value="Enviar">
+						</form>
+						<form class="msg_form" style="display: none;">
+							<button class="btn_codearea">Abrir Área de Código</button>
+							<textarea class="msg_input" name="msg" placeholder="Digite sua mensagem"></textarea>
+							<input class="msg_send" type="submit" value="Enviar">
+						</form>
+					</div>
+				</div>
+
+				<div class="main_right" style="display: none;">
+					<form class="code_form">
+						<textarea class="code_input" name="code" placeholder="Área de código"></textarea>
+						<input class="code_send" type="submit" value="Enviar Código">
+					</form>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
